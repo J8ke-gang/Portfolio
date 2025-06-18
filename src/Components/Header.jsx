@@ -1,10 +1,11 @@
+import "../Styles/Header.css";
 function Header() {
   return (
-    <Header>
+    <header>
       <div className="header-img-container">
         <img
-          src="https://images.pexels.com/photos/370717/pexels-photo-370717.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt="Canada"
+          src="https://avatars.githubusercontent.com/u/183407520?s=400&u=d47d149f28f7c7d262956616d0d446f81755bac4&v=4"
+          alt="header-img"
         />
         <p>Jake Thibault</p>
       </div>
@@ -27,7 +28,7 @@ function Header() {
           </a>
         </div>
       </section>
-    </Header>
+    </header>
   );
 }
 
