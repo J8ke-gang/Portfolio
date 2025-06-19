@@ -23,10 +23,10 @@ function ContactMe() {
         <a href="https://github.com/J8ke-gang" target="_blank" rel="noreferrer">
           <i className="fa-brands fa-github"></i>
         </a>
-        <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/jake-t-62667732b/" target="_blank" rel="noreferrer">
           <i className="fa-brands fa-linkedin"></i>
         </a>
-        <a href="mailto:example@example.com">
+        <a href="mailto:thibaultjake95@gmail.com">
           <i className="fa-solid fa-envelope"></i>
         </a>
       </div>

@@ -125,14 +125,14 @@ function MainProjects() {
           />
 
           <a
-            href="https://j8ke-gang.github.io/wheres-waldo-alt/"
+            href="https://where-s-waldo-alt-project.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
             <i className="fa-solid fa-up-right-from-square"></i>
           </a>
           <a
-            href="https://github.com/J8ke-gang/wheres-waldo-alt"
+            href="https://github.com/J8ke-gang/Where-s-Waldo-Alt-Project"
             target="_blank"
             rel="noreferrer"
           >
@@ -177,14 +177,14 @@ function MainProjects() {
           />
 
           <a
-            href="https://j8ke-gang.github.io/dashboard-project/"
+            href="https://j8ke-gang.github.io/Calculator/"
             target="_blank"
             rel="noreferrer"
           >
             <i className="fa-solid fa-up-right-from-square"></i>
           </a>
           <a
-            href="https://github.com/J8ke-gang/dashboard-project"
+            href="https://github.com/J8ke-gang/Calculator"
             target="_blank"
             rel="noreferrer"
           >
@@ -203,14 +203,14 @@ function MainProjects() {
           />
 
           <a
-            href="https://j8ke-gang.github.io/dashboard-project/"
+            href="https://project-memory-card-liart.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
             <i className="fa-solid fa-up-right-from-square"></i>
           </a>
           <a
-            href="https://github.com/J8ke-gang/dashboard-project"
+            href="https://github.com/J8ke-gang/project-memory-card"
             target="_blank"
             rel="noreferrer"
           >
