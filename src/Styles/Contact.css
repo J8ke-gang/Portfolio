@@ -1,0 +1,53 @@
+.contact-me-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-me-img img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*text section*/
+
+.contact-me {
+  max-width: 600px;
+}
+
+.contact-me h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.contact-me p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/*icons*/
+
+.contact-me-icons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-me-icons a {
+  font-size: 2rem;
+  color: #333;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact-me-icons a:hover {
+  color: #0072b1;
+  transform: scale(1.1);
+}
