@@ -16,10 +16,6 @@ function ContactMe() {
             Please get in touch with me if you think our work could be mutually
             beneficial
           </p>
-          <h3>
-            1234 Road Drive, GTA, Ontario, 123-456-7891 <br />
-            example@example.com
-          </h3>
         </div>
       </div>
 
