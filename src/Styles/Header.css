@@ -90,7 +90,7 @@
   padding-bottom: 5px;
   font-size: 1.35rem;
   border-bottom: 2px solid #007acc;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .tech-container {
@@ -110,15 +110,15 @@
 .tech-list li {
   background: linear-gradient(
     135deg,
-    #001a33 0%,     
-    #003366 25%,    
-    #007acc 50%,     
-    #003366 75%,     
-    #001a33 100%  
+    #001a33 0%,
+    #003366 25%,
+    #007acc 50%,
+    #003366 75%,
+    #001a33 100%
   );
   background-size: 400% 400%;
   animation: holoFlow 6s ease infinite;
-  color:#bcdaff;
+  color: #bcdaff;
   font-weight: bold;
   font-size: 1rem;
   padding: 0.5rem;
@@ -141,7 +141,7 @@
 
 /* Holographic shimmer */
 .tech-list li::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50%;
   left: -50%;
@@ -150,9 +150,9 @@
   background: linear-gradient(
     to right,
     transparent 0%,
-    rgba(0, 0, 0, 0.6) 40%,     
-    rgba(0, 122, 204, 0.6) 50%,  
-    rgba(0, 0, 0, 0.6) 60%,     
+    rgba(0, 0, 0, 0.6) 40%,
+    rgba(0, 122, 204, 0.6) 50%,
+    rgba(0, 0, 0, 0.6) 60%,
     transparent 100%
   );
   opacity: 0.5;
@@ -189,18 +189,75 @@
 }
 
 /* Responsive for smaller screens */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .header {
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
+    gap: 1rem;
   }
 
-  .header-img-container,
-  .about-me-container,
+  .header-img-container {
+    flex: none;
+    width: 150px;
+  }
+
+  .header-img-container img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .name {
+    font-size: 1.2rem;
+    padding: 1px;
+  }
+
+  .about-me-container {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .about-me-header {
+    font-size: 1.5rem;
+  }
+
+  .about-me-container p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .social-icons {
+    gap: 1rem;
+  }
+
+  .social-icons a {
+    font-size: 1.5rem;
+  }
+
+  .tech-header {
+    font-size: 1.1rem;
+  }
+
   .tech-container {
     flex: none;
     width: 100%;
-    max-width: 500px;
-    margin-bottom: 2rem;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .tech-list {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .tech-list li {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+
+  .tech-list li::before {
+    opacity: 0.3;
   }
 }

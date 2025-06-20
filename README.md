@@ -1,7 +1,11 @@
-# Portfolio
+# My Web Development Portfolio
 
-Portfolio for my work
+Welcome to my portfolio This website showcases my projects, skills, and experience.
 
-6 of my past projects <br>
-works on pc,tablet,phone <br>
-each project has a live web page and a link to my github code
+## Technologies Used
+
+- HTML5
+- CSS
+- JavaScript (ES6+)
+- React+Vite
+- ESLint
