@@ -87,8 +87,10 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1px;
+  padding-bottom: 5px;
   font-size: 1.35rem;
   border-bottom: 2px solid #007acc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .tech-container {
@@ -106,26 +108,84 @@
 }
 
 .tech-list li {
-  display: flex;
-  align-items: center;
-  background-color: #2a2a2a;
-  padding: 0.75rem 1rem;
+  background: linear-gradient(
+    135deg,
+    #001a33 0%,     
+    #003366 25%,    
+    #007acc 50%,     
+    #003366 75%,     
+    #001a33 100%  
+  );
+  background-size: 400% 400%;
+  animation: holoFlow 6s ease infinite;
+  color:#bcdaff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem;
   border-radius: 8px;
-  font-weight: 500;
-  color: #eee;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease, background-color 0.3s ease;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0, 122, 204, 0.5);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 122, 204, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-shadow: 0 0 8px rgba(0, 91, 153, 0.9);
 }
 
 .tech-list li i {
-  font-size: 1.4rem;
-  color: #007acc;
-  min-width: 24px;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: inherit;
+}
+
+/* Holographic shimmer */
+.tech-list li::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.6) 40%,     
+    rgba(0, 122, 204, 0.6) 50%,  
+    rgba(0, 0, 0, 0.6) 60%,     
+    transparent 100%
+  );
+  opacity: 0.5;
+  animation: holoShimmer 3.5s linear infinite;
+  pointer-events: none;
+  border-radius: 8px;
 }
 
 .tech-list li:hover {
-  transform: translateY(-3px);
-  background-color: #333;
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 122, 204, 0.8);
+}
+
+/* Animations */
+@keyframes holoFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes holoShimmer {
+  0% {
+    transform: rotate(-45deg) translate(-120%, -120%);
+  }
+  100% {
+    transform: rotate(-45deg) translate(120%, 120%);
+  }
 }
 
 /* Responsive for smaller screens */

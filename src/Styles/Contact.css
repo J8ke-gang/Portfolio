@@ -9,14 +9,13 @@
 }
 
 .contact-me-img img {
-  max-width: 300px;
+  max-width: 200px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /*text section*/
-
 .contact-me {
   max-width: 600px;
 }
@@ -33,12 +32,12 @@
 }
 
 /*icons*/
-
 .contact-me-icons {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
+  padding-bottom: 1%;
 }
 
 .contact-me-icons a {

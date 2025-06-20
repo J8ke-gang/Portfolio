@@ -55,25 +55,19 @@
   font-size: 1.5rem;
 }
 
-.project p {
-  font-size: 1rem;
-  color: #bbb;
-  margin-bottom: 1.25rem;
-}
-
 .project a {
   margin: 0 0.5rem;
   color: #007acc;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
+  font-size: 1.5rem;
 }
 
 .project a:hover {
   color: #00bfff;
+  transform: scale(1.03);
   cursor: pointer;
 }
 
-/*project thumbnail popup*/
+/*Modal popup*/
 .project-thumbnail {
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -96,9 +90,24 @@
   z-index: 1000;
 }
 
-.modal-content img {
+.modal-content {
+  position: relative;
   max-width: 90%;
   max-height: 90%;
-  border-radius: 8px;
-  box-shadow: 0 0 20px black;
+  overflow: auto;
+  background: #222;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1001;
 }

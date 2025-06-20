@@ -222,7 +222,10 @@ function MainProjects() {
       {/*Modal*/}
       {modalOpen && (
         <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content">
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="close-button" onClick={closeModal}>
+              &times;
+            </button>
             <img src={activeImage} alt="Full Screenshot" />
           </div>
         </div>
